@@ -58,7 +58,25 @@ namespace JanuaryExam2022
             return Fee;
         }
 
+        public decimal type;
 
+
+        //public decimal CalculateFees()
+        //{
+        //    switch(type)
+        //    {
+        //        case PaymentSchedule.Annual:
+        //            Fee / 12;
+        //            break;
+        //            case PaymentSchedule.Biannual:
+        //            Fee /= 6;
+        //            break;
+        //            case PaymentSchedule.Monthly:
+        //            Fee /= 1;
+
+        //    }
+
+        //}
         
     }
 }
