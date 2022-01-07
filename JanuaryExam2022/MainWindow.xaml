@@ -7,6 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="115,65,0,0" TextWrapping="Wrap" Text="Member List" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="380,65,0,0" TextWrapping="Wrap" Text="MemberDetails" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxMembers" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="115,97,526,126"/>
+        <RadioButton x:Name="rbSenior" Content="Senior" HorizontalAlignment="Left" Margin="241,342,0,0" VerticalAlignment="Top" GroupName="rbGroup"/>
+        <RadioButton x:Name="rbRegular" Content="Regular" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" GroupName="rbGroup"/>
+        <RadioButton x:Name="rbJunior" Content="Junior" HorizontalAlignment="Left" Margin="310,342,0,0" VerticalAlignment="Top" GroupName="rbGroup"/>
+        <RadioButton x:Name="rbAll" Content="All" HorizontalAlignment="Left" Margin="115,342,0,0" VerticalAlignment="Top" GroupName="rbGroup"/>
+        <TextBlock x:Name="tbxName" HorizontalAlignment="Center" Margin="0,101,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,122,0,0" TextWrapping="Wrap" Text="Join Date:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,143,0,0" TextWrapping="Wrap" Text="Basic Fee:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,164,0,0" TextWrapping="Wrap" Text="Payment Schedule:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,185,0,0" TextWrapping="Wrap" Text="Renewal Date:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,206,0,0" TextWrapping="Wrap" Text="Days To Renewal:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="384,227,0,0" TextWrapping="Wrap" Text="Member Type:" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
