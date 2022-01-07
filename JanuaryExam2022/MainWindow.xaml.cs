@@ -21,10 +21,14 @@ namespace JanuaryExam2022
     public partial class MainWindow : Window
     {
         List<Member> members = new List<Member>();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private List<Member> CreateMembers()
+        { 
 
 
         JuniorMember jm1 = new JuniorMember() { Name = "Jack Murphy", Fee = 1000, JoinDate = new DateTime(2020, 5, 7), PaymentType = PaymentSchedule.Annual };
@@ -39,7 +43,27 @@ namespace JanuaryExam2022
         SeniorMember sm2 = new SeniorMember() { Name = "Bobby Quinn", Fee = 1000, JoinDate = new DateTime(2014, 12, 1), PaymentType = PaymentSchedule.Biannual };
         SeniorMember sm3 = new SeniorMember() { Name = "Eve Gallagher", Fee = 1000, JoinDate = new DateTime(2013, 6, 1), PaymentType = PaymentSchedule.Monthly };
 
+            members.Add(jm1);
+            members.Add(jm2);
+            members.Add(jm3);
 
-        
+            members.Add(m1);
+            members.Add(m2);
+            members.Add(m3);
+
+            members.Add(sm1);
+            members.Add(sm2);
+            members.Add(sm3);
+
+
+            return members;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            members = CreateMembers();
+
+            lbxMembers.ItemsSource = members;
+        }
     }
 }

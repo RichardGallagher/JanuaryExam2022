@@ -28,15 +28,26 @@ namespace JanuaryExam2022
         {
             return $"{Name}";
         }
+
+
         private DateTime renewalDate;
-       
-        public DateTime RenewalDate 
+
+        public DateTime RenewalDate
         {
             get
             {
                 renewalDate = JoinDate.AddYears(1);
                 return renewalDate;
-            } 
+            }
         }
+
+
+        public virtual decimal AnnualFee()
+        {
+            return Fee;
+        }
+
+
+        
     }
 }

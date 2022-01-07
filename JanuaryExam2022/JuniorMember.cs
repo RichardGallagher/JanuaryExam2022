@@ -8,5 +8,10 @@ namespace JanuaryExam2022
 {
     public class JuniorMember : Member
     {
+       
+        public override decimal AnnualFee()
+        {
+            return Fee * 0.5m;
+        }
     }
 }

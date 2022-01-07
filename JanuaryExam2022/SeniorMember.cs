@@ -8,5 +8,9 @@ namespace JanuaryExam2022
 {
     public class SeniorMember:Member
     {
+        public override decimal AnnualFee()
+        {
+            return Fee * 0.75m;
+        }
     }
 }
