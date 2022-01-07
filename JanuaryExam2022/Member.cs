@@ -40,7 +40,18 @@ namespace JanuaryExam2022
                 return renewalDate;
             }
         }
+        public int days;
 
+        public int DaysToRenewal 
+        {
+            get
+            {
+                TimeSpan t = renewalDate - DateTime.Now;
+                days = t.Days;
+                return days;
+                
+            } 
+        }
 
         public virtual decimal AnnualFee()
         {
