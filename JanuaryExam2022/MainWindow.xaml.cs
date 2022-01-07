@@ -66,6 +66,9 @@ namespace JanuaryExam2022
             lbxMembers.ItemsSource = members;
         }
 
-
+        private void lbxMembers_Selected(object sender, RoutedEventArgs e)
+        {
+           // tbxName = 
+        }
     }
 }
